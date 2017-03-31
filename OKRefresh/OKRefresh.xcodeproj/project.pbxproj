@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C496A8416A6D6B9556B33F4 /* libPods-OKRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20760779C991D56B20172271 /* libPods-OKRefresh.a */; };
 		80B563631E8E3EE1002C54ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B563621E8E3EE1002C54ED /* main.m */; };
 		80B563661E8E3EE1002C54ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B563651E8E3EE1002C54ED /* AppDelegate.m */; };
 		80B563691E8E3EE1002C54ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B563681E8E3EE1002C54ED /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F2E8BDDE0FDADBE8D0C50AD /* Pods-OKRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKRefresh.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKRefresh/Pods-OKRefresh.release.xcconfig"; sourceTree = "<group>"; };
+		20760779C991D56B20172271 /* libPods-OKRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKRefresh.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B41825BB26601D2869626A8 /* Pods-OKRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKRefresh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OKRefresh/Pods-OKRefresh.debug.xcconfig"; sourceTree = "<group>"; };
 		80B5635E1E8E3EE1002C54ED /* OKRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B563621E8E3EE1002C54ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80B563641E8E3EE1002C54ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C496A8416A6D6B9556B33F4 /* libPods-OKRefresh.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7182032B6E0275FFCF85A1AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B41825BB26601D2869626A8 /* Pods-OKRefresh.debug.xcconfig */,
+				0F2E8BDDE0FDADBE8D0C50AD /* Pods-OKRefresh.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		80B563551E8E3EE1002C54ED = {
 			isa = PBXGroup;
 			children = (
 				80B563601E8E3EE1002C54ED /* OKRefresh */,
 				80B5635F1E8E3EE1002C54ED /* Products */,
+				7182032B6E0275FFCF85A1AF /* Pods */,
+				F00F6F150633570569A77AB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F00F6F150633570569A77AB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20760779C991D56B20172271 /* libPods-OKRefresh.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80B563751E8E3EE1002C54ED /* Build configuration list for PBXNativeTarget "OKRefresh" */;
 			buildPhases = (
+				C4414551DEAC31EB33500089 /* [CP] Check Pods Manifest.lock */,
 				80B5635A1E8E3EE1002C54ED /* Sources */,
 				80B5635B1E8E3EE1002C54ED /* Frameworks */,
 				80B5635C1E8E3EE1002C54ED /* Resources */,
+				E925DC30F6708B316A701B55 /* [CP] Embed Pods Frameworks */,
+				4F33AB28CD42C034726C577D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F33AB28CD42C034726C577D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OKRefresh/Pods-OKRefresh-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4414551DEAC31EB33500089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E925DC30F6708B316A701B55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OKRefresh/Pods-OKRefresh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80B5635A1E8E3EE1002C54ED /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		80B563761E8E3EE1002C54ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B41825BB26601D2869626A8 /* Pods-OKRefresh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W88294C78N;
@@ -281,6 +357,7 @@
 		};
 		80B563771E8E3EE1002C54ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2E8BDDE0FDADBE8D0C50AD /* Pods-OKRefresh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W88294C78N;
@@ -310,6 +387,7 @@
 				80B563771E8E3EE1002C54ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
